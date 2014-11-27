@@ -1,0 +1,288 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          padding:.2em;
+}
+.container {
+  width: 40%;
+  margin: 2em auto;
+  border: solid 2px lightgrey;
+}
+.row {
+    display:flex;
+    width:100%;
+}
+.row div {
+  text-align: center;
+  width:100%;
+}
+.row .screen {
+  height: 2em;
+  width: 100%;
+  text-align: right;
+  font-size: 1.5em;
+  padding: .5em .5em .2em .2em;
+  background-color:#9999FF;
+  color:black;
+}
+.button {
+  width: 25%;
+  cursor: pointer;
+  font-size: 1.5em;
+  padding: .2em;
+  margin:0 .1em;
+  background-color:lightgrey;
+  
+}
+.button:hover {
+  opacity: 0.75;
+}
+.button.span2 {
+  width: 50%;
+  font-size: 1.5em;
+  border: 2p solid red;
+}
+.button.span3 {
+  width: 75%;
+  font-size: 1.5em;
+}
+.symbol {
+  background-color: #9999FF;
+    width: 25%;
+    font-weight:bold;
+}
+.symbol,
+.screen {
+  color: black;
+}
+
+body {
+    text-align: center;
+}
+
+/*  Icons */
+
+@font-face {
+  font-family: 'icomoon';
+  src:url('fonts/icomoon.eot?e83dlr');
+  src:url('fonts/icomoon.eot?#iefixe83dlr') format('embedded-opentype'),
+    url('fonts/icomoon.woff?e83dlr') format('woff'),
+    url('fonts/icomoon.ttf?e83dlr') format('truetype'),
+    url('fonts/icomoon.svg?e83dlr#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon {
+  font-size: 1.5em;
+}
+
+.icon-link:before {
+  content: "\e600";
+}
+.icon-twitter:before {
+  content: "\e601";
+}
+.icon-github:before {
+  content: "\e602";
+}
+.icon-linkedin:before {
+  content: "\e603";
+}
+.icon-mail:before {
+  content: "\e604";
+}
+
+.icon-mail {
+  padding-top: 5px;
+}
+
+/* General styling */
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.7em;
+  font-weight: 400;
+  color: #333;
+}
+
+#name {
+  display: block;
+  font-family: 'Montez', 'Brush Script MT', 'Papyrus', cursive;
+  font-size: 1.7em;
+  font-weight: 100;
+  line-height: 1;
+}
+
+#project {
+  line-height: 0.7;
+  font-size: 3.8em;
+  font-weight: 300;
+  padding-height: -5%;
+}
+
+h1, a {
+  color: #747784;
+}
+
+h2 {
+  font-size: 2.2em;
+}
+
+.section-heading {
+  font-style: italic;
+}
+
+li {
+  display: inline-block;
+  list-style : none;
+}
+
+.container {
+  padding: 0 30px;
+}
+
+.primary-color {
+  color: #03bbc5;
+}
+
+.contrasting-1-color {
+  color: #002b2e;
+}
+
+.contrasting-2-color {
+  color: #646464;
+}
+
+.analgous-color {
+  color: #008cb0;
+}
+
+.muted-color {
+  color: #777;
+}
+
+/* Header */
+
+header {
+  color: #002b2e;
+  margin-top: 40px;
+}
+
+header h4 {
+  padding-bottom: 10px;
+}
+
+.contactBar {
+  background-color: #eee;
+  color: #bbb;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.contactBar ul {
+  display: inline-block;
+  float: none;
+}
+
+.contactBar ul li {
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 5px;
+}
+
+header .row {
+  margin-left: 0;
+}
+
+/* Footer */
+
+footer {
+  padding-top: 0px;
+  color: black;
+  clear: both;
+}
+
+#javascript {
+  font-family: 'Montez', 'Brush Script MT', 'Papyrus', cursive;
+  color: #008cb0 ;
+  font-size: 1.6em;
+}
+
+.github {
+  height: auto;
+  width: auto;
+  max-width: 20px;
+  max-height: 20px;"
+}
+
+button {
+  color: white;
+  background-color: #03bbc5;
+  border: #03bbc5;
+}
+
+.btn:hover {
+  background-color: #29E1EB;
+  color: white;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 1000px) {
+  .main ul li{
+    margin-bottom: -20px;
+    margin-top: -20px;
+  }
+  footer {
+    padding-top: 30px;
+  }
+  .contact-list {
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 700px){
+  footer {
+    padding-top: 60px;
+  }
+}
+
+@media only screen and (max-width:750px) {
+    .container {
+        width:50%;
+    }
+}
+@media only screen and (max-width:600px) {
+    .container {
+        width:60%;
+    }
+}
+@media only screen and (max-width:600px) {
+    .container {
+        width:85%;
+    }
+}
